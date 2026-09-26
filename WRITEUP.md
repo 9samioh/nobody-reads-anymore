@@ -10,3 +10,6 @@ Submit a `WRITEUP.md` in the root of your repo answering these five prompts. (\~
 6. Sketch the spec you would have wanted before starting this build (1 page, \~30 minutes). Cover component breakdown with proposed file paths, data/copy contracts (assume the carousel and marquee data are eventually backend-driven), feature-flag and rollout thinking, accessibility acceptance criteria, and any open questions you'd send back to design or product.
 
 If you used AI tools (Cursor, Codex, Copilot, Claude, etc.), disclose what you used them for in one or two sentences. We expect candidates to use AI tools; we want to see how you direct them.
+
+- used for initial setup
+- used for repetetive actions like to make marquee data file, changing content from readme to html
