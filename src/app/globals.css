@@ -4,6 +4,8 @@
   --header-background: #020202;
   --header-foreground: #ffffff;
   --text-link-primary: #0a68a6;
+
+  --secondary-font: var(--font-foldGrotesque);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -49,17 +51,4 @@ a {
   color: inherit;
   text-decoration: none;
   cursor: pointer;
-}
-
-.blockWrapper {
-  max-width: 600px;
-  margin: 20px auto;
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-}
-
-.blockWrapper a {
-  color: var(--text-link-primary);
-  font-weight: 500;
 }

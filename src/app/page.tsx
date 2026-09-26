@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import Marquee from "./components/Marquee/Marquee";
-import BlockOne from "./components/BlockOne/BlockOne";
+import BlockOne from "./components/Content/BlockOne";
 
 export default function Home() {
   return (
@@ -10,7 +10,7 @@ export default function Home() {
         <p className={styles.eyebrow}>A manifesto</p>
         <h1 className={styles.title}>“Nobody reads anymore.”</h1>
       </div>
-      {/* <Marquee /> */}
+      <Marquee />
       <BlockOne />
     </div>
   );
