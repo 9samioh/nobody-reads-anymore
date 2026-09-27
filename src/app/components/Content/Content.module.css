@@ -1,6 +1,12 @@
-.blockWrapper {
+.content {
   max-width: 600px;
-  margin: 20px auto;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.blockWrapper {
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -9,4 +15,21 @@
 .blockWrapper a {
   color: var(--text-link-primary);
   font-weight: 500;
+}
+
+.underlinedWord {
+  position: relative;
+  display: inline-block;
+}
+
+.underline {
+  position: absolute;
+  left: 0;
+  bottom: -7px;
+  width: 106%;
+  height: auto;
+}
+
+.image {
+  border-radius: 16px;
 }

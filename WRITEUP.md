@@ -7,7 +7,8 @@ Submit a `WRITEUP.md` in the root of your repo answering these five prompts. (\~
    - I made Marquee a client component because it needs to respond to user interaction
 2. What performance optimizations did you include? What performance metrics did you keep in mind?
    - changed to use Next images to optimize performance with these large images
-   - todo: maybe lazy load images later in the array?
+   - for the 3 tiles that show up first, fetch priority is high
+
 3. What did you do for keyboard navigation, screen readers, motion sensitivity, and color contrast on the knockout sections? What is still imperfect?
 4. If we gave you 24 more hours, what would you do, in priority order, and why?
 5. Name one thing you considered doing and decided against. What changed your mind?

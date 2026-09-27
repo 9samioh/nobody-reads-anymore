@@ -1,7 +1,6 @@
-import Image from "next/image";
 import styles from "./page.module.css";
 import Marquee from "./components/Marquee/Marquee";
-import BlockOne from "./components/Content/BlockOne";
+import SectionOne from "./components/Content/SectionOne";
 
 export default function Home() {
   return (
@@ -11,7 +10,7 @@ export default function Home() {
         <h1 className={styles.title}>“Nobody reads anymore.”</h1>
       </div>
       <Marquee />
-      <BlockOne />
+      <SectionOne />
     </div>
   );
 }

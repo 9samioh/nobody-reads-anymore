@@ -9,7 +9,6 @@ export default function Marquee() {
   const containerRef = useRef<HTMLDivElement>(null);
   const animationRef = useRef<number | null>(null);
   const isInteracting = useRef(false);
-  console.log(isInteracting);
 
   useEffect(() => {
     const container = containerRef.current;
@@ -51,7 +50,6 @@ export default function Marquee() {
         ref={containerRef}
         className={styles.container}
         onPointerDown={() => {
-          console.log("interacting");
           isInteracting.current = true;
         }}
         onPointerUp={() => {
@@ -70,6 +68,7 @@ export default function Marquee() {
                 alt={tile.name}
                 width={470}
                 height={587}
+                priority={index < 3}
               />
               <div className={styles.tileContent}>
                 <p className={styles.name}>{tile.name}</p>

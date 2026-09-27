@@ -3,7 +3,18 @@ import localFont from "next/font/local";
 import "./globals.css";
 
 const lardent = localFont({
-  src: "./fonts/lardent-slab-regular-pro.woff2",
+  src: [
+    {
+      path: "./fonts/lardent-slab-regular-pro.woff2",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "./fonts/lardent-slab-medium-pro.woff2",
+      weight: "500",
+      style: "normal",
+    },
+  ],
   variable: "--font-lardent",
 });
 
