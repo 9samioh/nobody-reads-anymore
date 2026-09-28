@@ -4,8 +4,8 @@
   --header-background: #020202;
   --header-foreground: #ffffff;
   --text-link-primary: #0a68a6;
-
-  --secondary-font: var(--font-foldGrotesque);
+  --border-primary: #dcdee0;
+  --neutral1: #f4f2f0;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -27,7 +27,7 @@ body {
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: var(--font-lardent);
+  font-family: var(--serif-stack);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -42,18 +42,36 @@ body {
 h1 {
   font-size: 72px;
   font-weight: 400;
+  line-height: 78px;
+  letter-spacing: -2px;
+}
+.h2,
+h2 {
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 54px;
+  letter-spacing: -1px;
 }
 .h3,
 h3 {
   font-size: 36px;
   font-weight: 400;
   line-height: 42px;
+  letter-spacing: -0.75px;
 }
 .h5,
 h5 {
   font-size: 24px;
   font-weight: 400;
   line-height: 30px;
+}
+.h6,
+h6 {
+  font-size: 18px;
+}
+
+.bold {
+  font-weight: 500;
 }
 
 p {

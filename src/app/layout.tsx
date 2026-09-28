@@ -15,12 +15,23 @@ const lardent = localFont({
       style: "normal",
     },
   ],
-  variable: "--font-lardent",
+  variable: "--serif-stack",
 });
 
 const foldGrotesque = localFont({
-  src: "./fonts/fold-grotesque-medium-pro.woff2",
-  variable: "--font-foldGrotesque",
+  src: [
+    {
+      path: "./fonts/fold-grotesque-medium-pro.woff2",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "./fonts/fold-grotesque-heavy-pro.woff2",
+      weight: "800",
+      style: "normal",
+    },
+  ],
+  variable: "--sans-serif-stack",
 });
 
 export const metadata: Metadata = {

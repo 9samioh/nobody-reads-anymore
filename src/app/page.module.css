@@ -12,11 +12,23 @@
 }
 
 .eyebrow {
-  font-family: var(--font-foldGrotesque);
+  font-family: var(--sans-serif-stack);
   font-size: 16px;
   text-transform: uppercase;
 }
 
-.title {
-  font-weight: 500;
+.content {
+  max-width: 600px;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.logoBlock {
+  position: relative;
+}
+
+.logoBlock p {
+  font-size: 200px;
 }
