@@ -25,19 +25,19 @@
 
 1.  Accessibility pass
 
-- I'd prioritize a full keyboard-navigation and screen-reader pass, and make sure it atleast passes WCAG standards. I would prioritize this because it makes the site usable to a wider range of users, while also being lower effort on the list. It could be a quick item to complete that would have a large impact on some people.
+I'd prioritize a full keyboard-navigation and screen-reader pass, and make sure it atleast passes WCAG standards. I would prioritize this because it makes the site usable to a wider range of users, while also being lower effort on the list. It could be a quick item to complete that would have a large impact on some people.
 
 2.  Improve responsive design
 
-- I'd test the page across more screen sizes and browsers, particularly Safari, and improve the marquee/carousel behavior and typography at more screen sizes.
+I'd test the page across more screen sizes and browsers, particularly Safari, and improve the marquee/carousel behavior and typography at more screen sizes.
 
 3.  Backend-ready data structure
 
-- Since the marquee and carousel data could eventually come from a backend, I'd make sure the data structure is consistent and handles cases where content is missing or formatted differently.
+Since the marquee and carousel data could eventually come from a backend, I'd make sure the data structure is consistent and handles cases where content is missing or formatted differently.
 
 4.  Make the content renderer more flexible
 
-- For this page, I just created a quick content renderer that allowed me to render the italicized text. With more time I'd build a more flexible text renderer that supports things like italics, bold text, and links without needing to manually structure every piece of content. This may not be an actual need, so I put it as a lower priority.
+For this page, I just created a quick content renderer that allowed me to render the italicized text. With more time I'd build a more flexible text renderer that supports things like italics, bold text, and links without needing to manually structure every piece of content. This may not be an actual need, so I put it as a lower priority.
 
 5. Quick dark mode design!
 
@@ -111,6 +111,6 @@ Before considering the page finished:
 - Will editors be able to add formatting such as links, bold, and italics?
 - What should happen if an image is missing or has a different aspect ratio?
 
-If you used AI tools (Cursor, Codex, Copilot, Claude, etc.), disclose what you used them for in one or two sentences. We expect candidates to use AI tools; we want to see how you direct them.
+## If you used AI tools (Cursor, Codex, Copilot, Claude, etc.), disclose what you used them for in one or two sentences. We expect candidates to use AI tools; we want to see how you direct them.
 
 I used AI tools (Cursor, ChatGPT, Claude) during the initial project setup and for repetitive tasks, such as generating the marquee data structure and converting the provided content into HTML. I also used AI to help think through the marquee animation and interaction logic. When using generated code, I added complexity in stages so I could understand and test each part rather than adding code I didn't fully understand. I also compared approaches between ChatGPT and Claude, since some of the suggested solutions were more complex than what the project needed.
