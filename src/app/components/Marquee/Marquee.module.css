@@ -2,6 +2,7 @@
   background-color: var(--inverse);
   color: var(--header-foreground);
   width: 100%;
+  padding-bottom: 16px;
 }
 
 .container {
@@ -10,7 +11,8 @@
   overflow-y: hidden;
   scrollbar-width: none;
   cursor: grab;
-  touch-action: pan-x;
+  user-select: none;
+  -webkit-user-select: none;
 }
 
 .container::-webkit-scrollbar {
@@ -24,8 +26,9 @@
 .tiles {
   display: flex;
   width: max-content;
-  gap: 24px;
+  gap: 16px;
   height: auto;
+  list-style: none;
 }
 
 .tile {
@@ -40,7 +43,6 @@
   left: 0;
   width: 100%;
   padding: 16px 16px 24px;
-  font-family: var(--font-foldGrotesque);
   background: linear-gradient(
     180deg,
     rgba(0, 0, 0, 0),
@@ -53,24 +55,24 @@
   display: block;
   width: 470px;
   height: 587px;
+  pointer-events: none;
 }
 
 .name {
   margin: 12px 0 0;
+  font-size: 16px;
 }
 
 .title {
   margin: 4px 0 0;
+  font-size: 16px;
 }
 
 /* Mobile */
 
 @media (max-width: 768px) {
-  .track {
-    gap: 16px;
-  }
-
-  .tile {
-    width: 180px;
+  .image {
+    width: 280px;
+    height: 420px;
   }
 }

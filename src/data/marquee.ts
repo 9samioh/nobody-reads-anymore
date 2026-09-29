@@ -1,102 +1,92 @@
 export interface MarqueeTile {
   image: string;
   name: string;
-  title: string;
+  title: FormattedText[];
 }
 
-// export type FormattedText = {
-//   text: string;
-//   italic?: boolean;
-// };
-
-// export type TimelineItem = {
-//   year: number;
-//   title: string;
-//   quote: string;
-//   attribution: FormattedText[];
-// };
-
-// export const timelineData: TimelineItem[] = [
-//   {
-//     year: 1902,
-//     title: "Newspapers",
-//     quote:
-//       "I do not think there will be any novels or romances… in fifty or a hundred years from now. They will be supplanted altogether by the daily newspaper.",
-//     attribution: [
-//       { text: "— Jules Verne, " },
-//       { text: "as quoted in the Daily Mail", italic: true },
-//     ],
-//   },
+type FormattedText = {
+  text: string;
+  italic?: boolean;
+};
 
 export const marqueeTiles: MarqueeTile[] = [
   {
     image: "/assets/marquee/img-13.png",
     name: "India Ennenga",
-    title: "Writer, Editor, Actor",
+    title: [{ text: "Writer, Editor, Actor" }],
   },
   {
     image: "/assets/marquee/img-2.png",
     name: "Cree Myles",
-    title: "@creemyles",
+    title: [{ text: "@creemyles" }],
   },
   {
     image: "/assets/marquee/img.png",
     name: "Diana Silvers",
-    title: "Musician, Actor",
+    title: [{ text: "Musician, Actor" }],
   },
   {
     image: "/assets/marquee/img-1.png",
     name: "Willa Bennett",
-    title: "Editor-in-Chief, Cosmopolitan and Seventeen",
+    title: [
+      { text: "Editor-in-Chief, " },
+      { text: "Cosmopolitan", italic: true },
+      { text: " and " },
+      { text: "Seventeen", italic: true },
+    ],
   },
   {
     image: "/assets/marquee/img-3.png",
     name: "Jack Edwards",
-    title: "Founder of Inklings and Content Creator",
+    title: [{ text: "Founder of Inklings and Content Creator" }],
   },
   {
     image: "/assets/marquee/img-4.png",
     name: "Hunter Harris",
-    title: "Author of Hung Up on Substack",
+    title: [
+      { text: "Author of " },
+      { text: "Hung Up", italic: true },
+      { text: " on Substack" },
+    ],
   },
   {
     image: "/assets/marquee/img-5.png",
     name: "Clara Perlmutter",
-    title: "@tinyjewishgirl",
+    title: [{ text: "@tinyjewishgirl" }],
   },
   {
     image: "/assets/marquee/img-6.png",
     name: "Lucy Zhao",
-    title: "Cofounder, Pagebound",
+    title: [{ text: "Cofounder, Pagebound" }],
   },
   {
     image: "/assets/marquee/img-7.png",
     name: "Zoe Dubno",
-    title: "Author",
+    title: [{ text: "Author" }],
   },
   {
     image: "/assets/marquee/img-8.png",
     name: "Sabrina Fuentes",
-    title: "Musician",
+    title: [{ text: "Musician" }],
   },
   {
     image: "/assets/marquee/img-9.png",
     name: "Matthew Gasda",
-    title: "Playwright",
+    title: [{ text: "Playwright" }],
   },
   {
     image: "/assets/marquee/img-10.png",
     name: "Monica Quintanar",
-    title: "Model, Brand Marketing Coordinator",
+    title: [{ text: "Model, Brand Marketing Coordinator" }],
   },
   {
     image: "/assets/marquee/img-11.png",
     name: "Bella M. Lucio",
-    title: "Stylist, Writer",
+    title: [{ text: "Stylist, Writer" }],
   },
   {
     image: "/assets/marquee/img-12.png",
     name: "Morgan Hamilton",
-    title: "Associate Editor, Alfred A. Knopf",
+    title: [{ text: "Associate Editor, Alfred A. Knopf" }],
   },
 ];

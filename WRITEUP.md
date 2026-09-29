@@ -10,8 +10,11 @@ Submit a `WRITEUP.md` in the root of your repo answering these five prompts. (\~
    - for the 3 tiles that show up first, fetch priority is high
 
 3. What did you do for keyboard navigation, screen readers, motion sensitivity, and color contrast on the knockout sections? What is still imperfect?
+   - correct h tags for accessibility / screen readers
 4. If we gave you 24 more hours, what would you do, in priority order, and why?
+   - more flexible text renderer - italics, bold, etc
 5. Name one thing you considered doing and decided against. What changed your mind?
+   - advanced text renderer, jsx in data, settled on a simple text renderer
 6. Sketch the spec you would have wanted before starting this build (1 page, \~30 minutes). Cover component breakdown with proposed file paths, data/copy contracts (assume the carousel and marquee data are eventually backend-driven), feature-flag and rollout thinking, accessibility acceptance criteria, and any open questions you'd send back to design or product.
 
 If you used AI tools (Cursor, Codex, Copilot, Claude, etc.), disclose what you used them for in one or two sentences. We expect candidates to use AI tools; we want to see how you direct them.
