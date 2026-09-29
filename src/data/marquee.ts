@@ -4,6 +4,30 @@ export interface MarqueeTile {
   title: string;
 }
 
+// export type FormattedText = {
+//   text: string;
+//   italic?: boolean;
+// };
+
+// export type TimelineItem = {
+//   year: number;
+//   title: string;
+//   quote: string;
+//   attribution: FormattedText[];
+// };
+
+// export const timelineData: TimelineItem[] = [
+//   {
+//     year: 1902,
+//     title: "Newspapers",
+//     quote:
+//       "I do not think there will be any novels or romances… in fifty or a hundred years from now. They will be supplanted altogether by the daily newspaper.",
+//     attribution: [
+//       { text: "— Jules Verne, " },
+//       { text: "as quoted in the Daily Mail", italic: true },
+//     ],
+//   },
+
 export const marqueeTiles: MarqueeTile[] = [
   {
     image: "/assets/marquee/img-13.png",

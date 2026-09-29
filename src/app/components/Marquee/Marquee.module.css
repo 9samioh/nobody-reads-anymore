@@ -1,5 +1,5 @@
 .marquee {
-  background-color: var(--header-background);
+  background-color: var(--inverse);
   color: var(--header-foreground);
   width: 100%;
 }
@@ -10,6 +10,7 @@
   overflow-y: hidden;
   scrollbar-width: none;
   cursor: grab;
+  touch-action: pan-x;
 }
 
 .container::-webkit-scrollbar {

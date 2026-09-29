@@ -10,18 +10,88 @@
   max-width: 936px;
   margin: 0 auto;
   text-align: center;
-}
-
-.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .years {
   display: flex;
   list-style: none;
   padding: 0 56px;
+  text-align: center;
+  justify-content: center;
+  border-bottom: 1px solid var(--border-primary);
 }
 
-.years li {
+.year {
   min-width: 80px;
   max-width: 240px;
+  padding: 20px 32px;
+  cursor: pointer;
+}
+.year p {
+  color: var(--text-secondary);
+  font-weight: 300;
+}
+
+.activeYear {
+  border-bottom: 2px solid var(--text-link-primary);
+}
+.activeYear p {
+  color: var(--text-link-primary);
+  font-weight: 400;
+}
+
+.activeYear:hover {
+  background-color: var(--primary-hover);
+}
+
+.activeTab {
+  display: flex;
+  gap: 48px;
+  margin: 0 auto;
+}
+
+.arrowDiv {
+  width: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.arrow {
+  cursor: pointer;
+}
+.arrow:hover {
+  color: var(--text-link-primary);
+}
+
+.backArrow {
+  rotate: 180deg;
+  cursor: pointer;
+}
+.backArrow:hover {
+  color: var(--text-link-primary);
+}
+
+.card {
+  background-color: var(--inverse);
+  color: var(--background);
+  width: 744px;
+  border-radius: 16px;
+  padding: 32px;
+}
+
+.cardTitle {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 32px;
+}
+
+.quote {
+  padding-bottom: 24px;
+  letter-spacing: -0.25px;
+}
+.author {
+  padding-bottom: 8px;
 }

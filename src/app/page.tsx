@@ -8,7 +8,7 @@ import BlockFour from "./components/Content/BlockFour";
 
 export default function Home() {
   return (
-    <div className={styles.page}>
+    <div>
       <div className={styles.hero}>
         <p className={styles.eyebrow}>A manifesto</p>
         <h1 className={styles.title}>“Nobody reads anymore.”</h1>
@@ -22,7 +22,7 @@ export default function Home() {
       <div className={styles.content}>
         <BlockThree />
         <BlockFour />
-      </div>{" "}
+      </div>
       <div className={styles.logoBlock}>
         <p className="">100</p>
         <span>Book of the Month</span>

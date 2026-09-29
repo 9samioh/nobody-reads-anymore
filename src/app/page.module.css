@@ -1,8 +1,5 @@
-.page {
-}
-
 .hero {
-  background-color: var(--header-background);
+  background-color: var(--inverse);
   color: var(--header-foreground);
   text-align: center;
   padding: 56px;
@@ -19,16 +16,8 @@
 
 .content {
   max-width: 600px;
-  margin: 50px auto;
+  margin: 56px auto 80px;
   display: flex;
   flex-direction: column;
   gap: 80px;
-}
-
-.logoBlock {
-  position: relative;
-}
-
-.logoBlock p {
-  font-size: 200px;
 }

@@ -21,6 +21,11 @@ const lardent = localFont({
 const foldGrotesque = localFont({
   src: [
     {
+      path: "./fonts/fold-grotesque-regular-pro.woff2",
+      weight: "300",
+      style: "normal",
+    },
+    {
       path: "./fonts/fold-grotesque-medium-pro.woff2",
       weight: "400",
       style: "normal",
