@@ -61,7 +61,7 @@ export default function BlockOne() {
         inevitable.
       </p>
 
-      <h5>
+      <p className={`h5 ${styles.mobileToH4}`}>
         We{" "}
         <span className={styles.underlinedWord}>
           disagree.
@@ -71,7 +71,7 @@ export default function BlockOne() {
             alt=""
           />
         </span>
-      </h5>
+      </p>
 
       <p>
         Fiction's feverish funeral procession is not new (see our timeline of

@@ -12,6 +12,8 @@
   font-family: var(--sans-serif-stack);
   font-size: 16px;
   text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 22px;
 }
 
 .content {
@@ -51,4 +53,30 @@
   white-space: nowrap;
   z-index: 1;
   font-size: 28px;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+  .eyebrow {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .content {
+    width: 100%;
+    padding: 0 20px;
+    margin: 32px auto 48px;
+    gap: 48px;
+  }
+
+  .logoBlock {
+    margin-bottom: 80px;
+  }
+  .logoBlock p {
+    font-size: 100px;
+  }
+  .logoBlock span {
+    font-size: 24px;
+  }
 }

@@ -11,7 +11,7 @@ export default function Carousel() {
     <div className={styles.container}>
       <div className={styles.intro}>
         <h2>
-          A brief timeline of fiction's <br />
+          A brief timeline of fiction's <br className={styles.desktopBr} />
           exaggerated demise.
         </h2>
         <p>

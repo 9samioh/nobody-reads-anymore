@@ -42,9 +42,36 @@
   gap: 32px;
   padding: 32px 0;
   border-bottom: 1px solid var(--border-primary);
+  align-items: center;
 }
 
 .number {
   font-weight: 800;
   font-family: var(--sans-serif-stack);
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+  .image {
+    width: 100%;
+    height: auto;
+  }
+
+  .mobileToH4 {
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: -0.25px;
+  }
+  .blockWrapper h3 {
+    font-size: 28px;
+    line-height: 34px;
+    letter-spacing: -0.75px;
+  }
+  .list li {
+    padding: 16px 0;
+  }
+  .number {
+    font-size: 20px;
+  }
 }
