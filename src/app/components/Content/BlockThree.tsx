@@ -8,7 +8,7 @@ export default function BlockThree() {
       <div>
         <Image
           src="/assets/body/img02_new.png"
-          alt="Description"
+          alt="Nobody Reads Anymore campaign billboards"
           width={600}
           height={450}
           className={styles.image}

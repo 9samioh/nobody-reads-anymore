@@ -1,8 +1,8 @@
-export interface MarqueeTile {
+export type MarqueeTile = {
   image: string;
   name: string;
   title: FormattedText[];
-}
+};
 
 type FormattedText = {
   text: string;

@@ -8,7 +8,7 @@ export default function BlockFour() {
       <div>
         <Image
           src="/assets/body/img03_new.png"
-          alt="Description"
+          alt="Nobody Reads Anymore campaign posters"
           width={600}
           height={450}
           className={styles.image}

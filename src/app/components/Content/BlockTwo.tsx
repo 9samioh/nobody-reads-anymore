@@ -8,7 +8,7 @@ export default function BlockTwo() {
       <div>
         <Image
           src="/assets/body/img01.png"
-          alt="Description"
+          alt="Nobody Reads Anymore campaign billboards"
           width={600}
           height={450}
           className={styles.image}

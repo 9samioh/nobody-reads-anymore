@@ -145,7 +145,7 @@ export default function Marquee() {
                 <Image
                   className={styles.image}
                   src={tile.image}
-                  alt={tile.name}
+                  alt={`Picture of ${tile.name}`}
                   width={470}
                   height={587}
                   priority={index < 3}

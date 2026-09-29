@@ -68,7 +68,7 @@ export default function BlockOne() {
           <img
             className={styles.underline}
             src="/assets/body/underline.svg"
-            alt=""
+            alt="underline"
           />
         </span>
       </p>
