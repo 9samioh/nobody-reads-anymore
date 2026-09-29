@@ -7,11 +7,12 @@ export default function BlockOne() {
       <p>
         The message is everywhere: Reading is dying. The book, that tactile
         relic of our pre-screen existence, is drifting toward irrelevance. The
-        "post-literate" age is dawning.
+        &ldquo;post-literate&rdquo; age is dawning.
       </p>
 
       <p>
-        You've heard it at dinner parties and on podcasts. You've seen it in{" "}
+        You&apos;ve heard it at dinner parties and on podcasts. You&apos;ve seen
+        it in{" "}
         <a
           href="https://www.theguardian.com/us-news/2025/aug/20/reading-for-pleasure-study"
           target="_blank"
@@ -27,7 +28,7 @@ export default function BlockOne() {
         >
           plaintive think pieces
         </a>
-        . You've watched researchers publish{" "}
+        . You&apos;ve watched researchers publish{" "}
         <a
           href="https://news.ufl.edu/2025/08/reading-for-pleasure-study/"
           target="_blank"
@@ -57,7 +58,7 @@ export default function BlockOne() {
         </a>
         , assigning excerpts to a generation unaccustomed to the delights and
         demands of tackling a novel cover to cover. Literary fiction had a long
-        and glorious run, the thinking goes, but it's time to accept the
+        and glorious run, the thinking goes, but it&apos;s time to accept the
         inevitable.
       </p>
 
@@ -74,9 +75,9 @@ export default function BlockOne() {
       </p>
 
       <p>
-        Fiction's feverish funeral procession is not new (see our timeline of
-        reading's exaggerated demise). These predictions were wrong then, and
-        they're wrong now.
+        Fiction&apos;s feverish funeral procession is not new (see our timeline
+        of reading&apos;s exaggerated demise). These predictions were wrong
+        then, and they&apos;re wrong now.
       </p>
     </div>
   );

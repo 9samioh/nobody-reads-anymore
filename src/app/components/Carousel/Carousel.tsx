@@ -11,14 +11,15 @@ export default function Carousel() {
     <div className={styles.container}>
       <div className={styles.intro}>
         <h2>
-          A brief timeline of fiction's <br className={styles.desktopBr} />
+          A brief timeline of fiction&apos;s <br className={styles.desktopBr} />
           exaggerated demise.
         </h2>
         <p>
           For more than 100 years, leading thinkers have been predicting the
-          "end of reading" based on whatever the prevailing technology happens
-          to be at the time. From Jules Verne to Steve Jobs, it has been doom
-          and gloom all the way. Here are just a few examples we've noticed.
+          &ldquo;end of reading&rdquo; based on whatever the prevailing
+          technology happens to be at the time. From Jules Verne to Steve Jobs,
+          it has been doom and gloom all the way. Here are just a few examples
+          we&apos;ve noticed.
         </p>
       </div>
 

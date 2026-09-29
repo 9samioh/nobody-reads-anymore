@@ -25,9 +25,9 @@ export default function BlockThree() {
             Gen Zers are actively changing their relationship with screens.
           </h5>
           <p>
-            They don't need researchers to tell them how constant doomscrolling
-            impacts their health, wellbeing, and clarity of thought. They're
-            disproportionately{" "}
+            They don&apos;t need researchers to tell them how constant
+            doomscrolling impacts their health, wellbeing, and clarity of
+            thought. They&apos;re disproportionately{" "}
             <a
               href="https://studyfinds.org/young-americans-unplugging-happier/"
               target="_blank"
@@ -60,8 +60,8 @@ export default function BlockThree() {
           <h5>The hunger for analog is real.</h5>
           <p>
             Gen Z is leading an in-real-life revolution that would have seemed
-            unthinkable even recently. They're amassing vinyl records, driving
-            up sales by an average of{" "}
+            unthinkable even recently. They&apos;re amassing vinyl records,
+            driving up sales by an average of{" "}
             <a
               href="https://www.cnn.com/2025/12/14/business/vinyl-collectible-gen-z"
               target="_blank"
@@ -69,7 +69,7 @@ export default function BlockThree() {
             >
               18% a year
             </a>{" "}
-            over the past five years. They're{" "}
+            over the past five years. They&apos;re{" "}
             <a
               href="https://www.wbur.org/onpoint/2025/12/24/gen-z-says-hotties-need-hobbies"
               target="_blank"
@@ -111,8 +111,8 @@ export default function BlockThree() {
             >
               educators are actually pulling back
             </a>
-            . They're lowering standards for reading in school, scaling back
-            substantive discussion of literature, and assigning fewer full
+            . They&apos;re lowering standards for reading in school, scaling
+            back substantive discussion of literature, and assigning fewer full
             books. We believe this is a disservice to Gen Z. Teaching
             literature—reading full books, engaging with them, discussing them
             seriously—is vital for a generation navigating our environment of

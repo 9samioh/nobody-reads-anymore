@@ -19,8 +19,8 @@ export default function BlockFour() {
         <h3>Fiction forward</h3>
         <p>
           At Book of the Month, we believe deeply in the future of fiction.
-          That's why we're nurturing the new reading renaissance by surfacing,
-          publishing, and promoting the books that matter most.
+          That&apos;s why we&apos;re nurturing the new reading renaissance by
+          surfacing, publishing, and promoting the books that matter most.
         </p>
 
         <ol className={styles.list}>
@@ -44,18 +44,18 @@ export default function BlockFour() {
             <p className={`h3 ${styles.number}`}>03</p>
             <p>
               <span className="h6 bold">We unfailingly celebrate reading</span>{" "}
-              as one of life's great pleasures in everything we do.
+              as one of life&apos;s great pleasures in everything we do.
             </p>
           </li>
         </ol>
 
         <p>
-          We're proud to be among the largest advertisers of books in America
-          across both paid and organic channels. In a consumer culture saturated
-          with competing content, someone has to make the case for reading. We
-          always have, and we always will.
+          We&apos;re proud to be among the largest advertisers of books in
+          America across both paid and organic channels. In a consumer culture
+          saturated with competing content, someone has to make the case for
+          reading. We always have, and we always will.
         </p>
-        <p>Here's to the next 100 years of Nobody Reading Anymore.</p>
+        <p>Here&apos;s to the next 100 years of Nobody Reading Anymore.</p>
       </div>
     </>
   );

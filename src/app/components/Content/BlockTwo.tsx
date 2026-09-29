@@ -66,7 +66,7 @@ export default function BlockTwo() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              "shocking, triumphant comeback."
+              &ldquo;shocking, triumphant comeback.&rdquo;
             </a>{" "}
             According to Fast Company, over the last five years the number of
             independent bookstores in the U.S. has grown 70%. Across the
@@ -77,7 +77,7 @@ export default function BlockTwo() {
         <div className={styles.subsection}>
           <h5>
             Book influencers have become powerful voices on social media, and
-            they're everywhere.
+            they&apos;re everywhere.
           </h5>
 
           <p>
@@ -103,16 +103,16 @@ export default function BlockTwo() {
 
         <div className={styles.subsection}>
           <h5>
-            All that content we're streaming on our screens? It's coming from
-            books.
+            All that content we&apos;re streaming on our screens? It&apos;s
+            coming from books.
           </h5>
 
           <p>
-            Your latest streaming obsession? Chances are it's based on a book.
-            Dozens of BOTM selections have been adapted for screen in recent
-            years, including <em>People We Meet On Vacation</em>,{" "}
+            Your latest streaming obsession? Chances are it&apos;s based on a
+            book. Dozens of BOTM selections have been adapted for screen in
+            recent years, including <em>People We Meet On Vacation</em>,{" "}
             <em>Daisy Jones &amp; The Six</em>, <em>A Gentleman in Moscow</em>{" "}
-            and now <em>Margo's Got Money Troubles</em>. Many more are in
+            and now <em>Margo&apos;s Got Money Troubles</em>. Many more are in
             production, including <em>The Ministry of Time</em>,{" "}
             <em>Tell Me Lies</em>, <em>The Seven Husbands of Evelyn Hugo</em>,
             and our very own Lolly Award winner <em>The God of the Woods</em>.
