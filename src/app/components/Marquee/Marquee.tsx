@@ -8,6 +8,8 @@ import styles from "./Marquee.module.css";
 export default function Marquee() {
   const containerRef = useRef<HTMLDivElement>(null);
   const loopWidthRef = useRef(0);
+  const scrollPositionRef = useRef(0);
+
   // storing animation id
   const animationRef = useRef<number | null>(null);
 
@@ -24,15 +26,15 @@ export default function Marquee() {
 
     if (!container || !loopWidth) return;
 
-    if (!loopWidth) return;
-
-    if (container.scrollLeft <= 0) {
-      container.scrollLeft += loopWidth;
+    if (scrollPositionRef.current <= 0) {
+      scrollPositionRef.current += loopWidth;
     }
 
-    if (container.scrollLeft >= loopWidth * 2) {
-      container.scrollLeft -= loopWidth;
+    if (scrollPositionRef.current >= loopWidth * 2) {
+      scrollPositionRef.current -= loopWidth;
     }
+
+    container.scrollLeft = scrollPositionRef.current;
   };
 
   useEffect(() => {
@@ -42,11 +44,12 @@ export default function Marquee() {
 
     const loopWidth = container.scrollWidth / 3;
     loopWidthRef.current = loopWidth;
+    scrollPositionRef.current = loopWidth;
     container.scrollLeft = loopWidth;
 
     // get current time - want to animate based on time (not animation frame)
     let lastTime = performance.now();
-    // moving 30px per sec
+    // moving 50px per sec
     const speed = 50;
 
     const animate = (currentTime: number) => {
@@ -54,13 +57,11 @@ export default function Marquee() {
       const delta = currentTime - lastTime;
       lastTime = currentTime;
 
-      // console.log(container.scrollLeft);
-
       // don't scroll if user interacting
       if (!isInteracting.current) {
-        container.scrollLeft += (speed * delta) / 1000;
+        scrollPositionRef.current += (speed * delta) / 1000;
+        resetScrollPosition();
       }
-      resetScrollPosition();
 
       // continue w animation
       animationRef.current = requestAnimationFrame(animate);
@@ -70,13 +71,19 @@ export default function Marquee() {
 
     // cleanup for useEffect
     return () => {
-      if (animationRef.current) {
+      if (animationRef.current !== null) {
         cancelAnimationFrame(animationRef.current);
       }
     };
   }, []);
 
   const handleScroll = () => {
+    const container = containerRef.current;
+
+    if (!container || isInteracting.current) return;
+
+    scrollPositionRef.current = container.scrollLeft;
+
     resetScrollPosition();
   };
 
@@ -102,13 +109,21 @@ export default function Marquee() {
 
     const distance = e.clientX - startX.current;
 
-    container.scrollLeft = startScrollLeft.current - distance;
+    scrollPositionRef.current = startScrollLeft.current - distance;
     resetScrollPosition();
   };
 
   const handlePointerUp = (e: React.PointerEvent<HTMLDivElement>) => {
     isInteracting.current = false;
-    containerRef.current?.releasePointerCapture(e.pointerId);
+    const container = containerRef.current;
+
+    if (container?.hasPointerCapture(e.pointerId)) {
+      container.releasePointerCapture(e.pointerId);
+    }
+
+    if (container) {
+      scrollPositionRef.current = container.scrollLeft;
+    }
   };
 
   return (
